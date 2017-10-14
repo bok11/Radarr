@@ -1,3 +1,16 @@
+This fork of radarr aims to optimize radarr for use with the tracker Hounddawgs.
+The changes made is limited to the language recogniser, so the danish subtitles and danish movies are recognised as english.
+
+Usage: set uality language to english. Both danish movies and danish subtitled movies are now recognised as english movies. 
+
+Changes:
+Title contains "danish" now parses as english language and not danish. (this makes danish movies downloadable)
+Title containing "nordic" now parses as english and not norwegian. (this fixes movies with NORDiC tag)
+Titles containing "subs" is no longer parses as hardcoded subs (this fixes movies with DKSubs tag)
+
+
+
+
 <p align="center">
 <img src="/Logo/text256.png" alt="Radarr">
 </p>

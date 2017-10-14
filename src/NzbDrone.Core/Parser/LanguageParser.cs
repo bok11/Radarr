@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -30,7 +30,7 @@ namespace NzbDrone.Core.Parser
                 return Language.Spanish;
 
             if (lowerTitle.Contains("danish"))
-                return Language.Danish;
+                return Language.English;
 
             if (lowerTitle.Contains("dutch"))
                 return Language.Dutch;
@@ -63,7 +63,7 @@ namespace NzbDrone.Core.Parser
                 return Language.Norwegian;
 
             if (lowerTitle.Contains("nordic"))
-                return Language.Norwegian;
+                return Language.English;
 
             if (lowerTitle.Contains("finnish"))
                 return Language.Finnish;
