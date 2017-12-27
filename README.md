@@ -1,17 +1,3 @@
-# custom fork notes
-This fork of radarr aims to optimize radarr for use with the tracker Hounddawgs.
-The changes made is limited to the language recogniser, so the danish subtitles and danish movies are recognised as english.
-
-Usage: set quality language to english. Both danish movies and danish subtitled movies are now recognised as english movies. 
-
-Changes:
-* Title contains "danish" now parses as english language and not danish. (this makes danish movies downloadable)
-* Title containing "nordic" now parses as english and not norwegian. (this fixes movies with NORDiC tag)
-* Titles containing "subs" is no longer parses as hardcoded subs (this fixes movies with DKSubs tag)
-
-
-# Original readme
-
 <p align="center">
 <img src="/Logo/text256.png" alt="Radarr">
 </p>
@@ -129,10 +115,17 @@ Radarr is currently undergoing rapid development and pull requests are actively 
 > **Notice**  
 > Gulp must be running at all times while you are working with Radarr client source files.
 
+### Build
+
+* To build run `sh build.sh`
+
+**Note:** Windows users must have bash available to do this. [cmder](http://cmder.net/) which is a console emulator for windows has bash as part of it's default installation.
+
 ### Development
 
 * Open `NzbDrone.sln` in Visual Studio or run the build.sh script, if Mono is installed
 * Make sure `NzbDrone.Console` is set as the startup project
+* Run `build.sh` before running
 
 ### License
 

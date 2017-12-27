@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -48,7 +48,7 @@ namespace NzbDrone.Core.Parser
                                                                 )\b",
                                                                 RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
 
-        private static readonly Regex HardcodedSubsRegex = new Regex(@"\b(?<hcsub>(\w+SUB)\b)|(?<hc>(HC|SUBBED))\b", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
+        private static readonly Regex HardcodedSubsRegex = new Regex(@"\b(?<hcsub>(\w+SUB?)\b)|(?<hc>(HC|SUBBED))\b", RegexOptions.Compiled | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);
 
         private static readonly Regex RemuxRegex = new Regex(@"\b(?<remux>(BD)?Remux)\b",
                                                         RegexOptions.Compiled | RegexOptions.IgnoreCase);
